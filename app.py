@@ -235,7 +235,7 @@ left_col, right_col = st.columns([1, 2], gap="large")
 # ─────────────────────────────────────────────────────────────────────
 
 with left_col:
-    st.markdown("### 🗂️ Tema oversigt")
+    st.markdown("### 🗂️ Themes overview")
 
     theme_counts: dict[str, int] = defaultdict(int)
     for p in papers:
