@@ -109,7 +109,7 @@ left_col, right_col = st.columns([1, 2], gap="large")
 # ─────────────────────────────────────────────────────────────────────
 
 with left_col:
-    st.markdown("### 🗂️ Tema oversigt")
+    st.markdown("### 🗂️ Themes")
 
     theme_counts = defaultdict(int)
     for p in display_papers:
