@@ -138,14 +138,15 @@ def fetch_papers(issns: list[str], year: int, max_per: int) -> list[dict]:
             "select":   fields,
             "mailto":   "research-radar@example.com",
         }
-       try:
+        try:
             r = requests.get("https://api.openalex.org/works", params=params, timeout=15)
             r.raise_for_status()
             for p in r.json().get("results", []):
                 papers.append(enrich(p))
-            time.sleep(0.5)  
+            time.sleep(1)
         except Exception as e:
             st.warning(f"Could not fetch ISSN {issn}: {e}")
+            time.sleep(2)
     return papers
 
 
