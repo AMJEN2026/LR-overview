@@ -138,7 +138,7 @@ def fetch_papers(issns: list[str], year: int, max_per: int) -> list[dict]:
         "sort":     "publication_date:desc",
         "per-page": max_per,
         "select":   fields,
-        "mailto":   "research-radar@example.com",
+        "api_key":  "0RwxKibyjeBOuDBPRF5dH8",
     }
     try:
         r = requests.get("https://api.openalex.org/works", params=params, timeout=30)
