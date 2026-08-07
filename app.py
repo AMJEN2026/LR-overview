@@ -26,6 +26,12 @@ JOURNALS = {
     "European Accounting Review":                "0963-8180",
     "Critical Perspectives on Accounting":       "1045-2354",
     "Journal of Management Accounting Research": "1049-2127",
+"Accounting, Auditing & Accountability Journal": "1758-4205",
+"Behavioral Research In Accounting": "1558-8009",
+"Accounting and Business Research": "2159-4260",
+"Review of Accounting Studies": "1573-7136"
+
+    
 }
 
 JOURNAL_SHORT = {
@@ -37,6 +43,13 @@ JOURNAL_SHORT = {
     "European Accounting Review":                "EAR",
     "Critical Perspectives on Accounting":       "CPA",
     "Journal of Management Accounting Research": "JMAR",
+    "Accounting, Auditing & Accountability Journal": "AAAJ", 
+"Behavioral Research In Accounting": "BRIA",
+"Accounting and Business Research": "ABR",
+"Review of Accounting Studies": "RAS"
+	
+
+    
 }
 
 THEMES = {
