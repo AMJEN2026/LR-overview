@@ -17,7 +17,7 @@ from collections import defaultdict
 # ══════════════════════════════════════════════════════════════════════
 
 JOURNALS = {
-    "All top journals":                          None,
+    "All journals":                          None,
     "Management Accounting Research":            "1044-5005",
     "Accounting, Organizations and Society":     "0361-3682",
     "Journal of Accounting Research":            "0021-8456",
