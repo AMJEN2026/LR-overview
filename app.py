@@ -143,7 +143,7 @@ def fetch_papers(issns: list[str], year: int, max_per: int) -> list[dict]:
             r.raise_for_status()
             for p in r.json().get("results", []):
                 papers.append(enrich(p))
-            time.sleep(0.5)  # ← same level as the lines above it
+            time.sleep(0.5)  
         except Exception as e:
             st.warning(f"Could not fetch ISSN {issn}: {e}")
     return papers
