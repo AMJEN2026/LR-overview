@@ -17,7 +17,7 @@ from collections import defaultdict
 # ══════════════════════════════════════════════════════════════════════
 
 JOURNALS = {
-    "All journals":                          None,
+    "All top journals":                          None,
     "Management Accounting Research":            "1044-5005",
     "Accounting, Organizations and Society":     "0361-3682",
     "Journal of Accounting Research":            "0021-8456",
@@ -30,8 +30,7 @@ JOURNALS = {
 "Behavioral Research In Accounting": "1558-8009",
 "Accounting and Business Research": "2159-4260",
 "Review of Accounting Studies": "1573-7136",
-
-    
+   
 }
 
 JOURNAL_SHORT = {
@@ -47,8 +46,6 @@ JOURNAL_SHORT = {
 "Behavioral Research In Accounting": "BRIA",
 "Accounting and Business Research": "ABR",
 "Review of Accounting Studies": "RAS",
-	
-
     
 }
 
