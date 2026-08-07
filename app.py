@@ -30,7 +30,7 @@ JOURNALS = {
 "Behavioral Research In Accounting": "1558-8009",
 "Accounting and Business Research": "2159-4260",
 "Review of Accounting Studies": "1573-7136",
-
+,
     
 }
 
