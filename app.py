@@ -131,23 +131,22 @@ def fetch_papers(issns: list[str], year: int, max_per: int) -> list[dict]:
         "primary_location,authorships,abstract_inverted_index,"
         "open_access,cited_by_count"
     )
-    for issn in issns:
-        params = {
-            "filter":   f"primary_location.source.issn:{issn},publication_year:{year}",
-            "sort":     "publication_date:desc",
-            "per-page": max_per,
-            "select":   fields,
-            "mailto":   "research-radar@example.com",
-        }
-        try:
-            r = requests.get("https://api.openalex.org/works", params=params, timeout=15)
-            r.raise_for_status()
-            for p in r.json().get("results", []):
-                papers.append(enrich(p))
-            time.sleep(1)
-        except Exception as e:
-            st.warning(f"Could not fetch ISSN {issn}: {e}")
-            time.sleep(2)
+    # Combine all ISSNs into one request using | (or)
+    issn_filter = "|".join(f"primary_location.source.issn:{issn}" for issn in issns)
+    params = {
+        "filter":   f"{issn_filter},publication_year:{year}",
+        "sort":     "publication_date:desc",
+        "per-page": max_per,
+        "select":   fields,
+        "mailto":   "research-radar@example.com",
+    }
+    try:
+        r = requests.get("https://api.openalex.org/works", params=params, timeout=30)
+        r.raise_for_status()
+        for p in r.json().get("results", []):
+            papers.append(enrich(p))
+    except Exception as e:
+        st.error(f"Could not fetch papers: {e}")
     return papers
 
 
