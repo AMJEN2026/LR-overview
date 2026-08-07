@@ -29,7 +29,7 @@ JOURNALS = {
 "Accounting, Auditing & Accountability Journal": "1758-4205",
 "Behavioral Research In Accounting": "1558-8009",
 "Accounting and Business Research": "2159-4260",
-"Review of Accounting Studies": "1573-7136"
+"Review of Accounting Studies": "1573-7136",
 
     
 }
@@ -46,7 +46,7 @@ JOURNAL_SHORT = {
     "Accounting, Auditing & Accountability Journal": "AAAJ", 
 "Behavioral Research In Accounting": "BRIA",
 "Accounting and Business Research": "ABR",
-"Review of Accounting Studies": "RAS"
+"Review of Accounting Studies": "RAS",
 	
 
     
