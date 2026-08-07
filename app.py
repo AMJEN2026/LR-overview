@@ -145,6 +145,7 @@ def fetch_papers(issns: list[str], year: int, max_per: int) -> list[dict]:
                 papers.append(enrich(p))
         except Exception as e:
             st.warning(f"Could not fetch ISSN {issn}: {e}")
+               time.sleep(0.5) 
     return papers
 
 
